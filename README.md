@@ -1,6 +1,6 @@
 # 🏡 King County House Prices Analysis 
 
-Analyzing house sale prices across King County (including Seattle) from May 2014 to May 2015 to uncover market trends and build predictive models for real estate valuation with Machine Learning.  
+Analyzing house sale prices across King County from May 2014 to May 2015 to uncover market trends and build predictive models for real estate valuation with Machine Learning.  
 
 ---
 
