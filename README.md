@@ -77,37 +77,36 @@ The goal of this project is to **predict house prices** using property features,
 **Run Instructions:**
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/nataliadominguez99/Vehicles-Sales-Project.git
+   git clone https://github.com/nataliadominguez99/King-Conty-House-Price-Prediction.git
 
 2. **Navigate to the project folder**
    ```bash
-    cd Vehicles-Sales-Project
+    cd King-Conty-House-Price-Prediction
 
 3. **Open the Jupyter Notebook**
 - If you use Jupyter Notebook:
    ```bash
-   jupyter notebook "Vehicles Sales Data Analysis.ipynb"
+   jupyter notebook "King_countryproject.ipynb"
 - Or, open it in VSCode by double-clicking the file or using:
    ```bash
-    code "Vehicles Sales Data Analysis.ipynb"
+    code "King_countryproject.ipynb"
   
 4. **Ensure the dataset is in the correct location**
 - The file sales_data_sample.csv must be in the same directory as the notebook.
 
-5. Run all cells
+5. **Run all cells**
 - Select Cell > Run All in Jupyter Notebook or VSCode to reproduce the analysis.
 
 ## 🚀 Next Steps
 
-- Build predictive models to forecast sales by product line  
-- Conduct customer segmentation for targeted marketing strategies  
-- Integrate external datasets (e.g., economic indicators) for deeper insights  
+- Incorporate external data (interest rates, economic indicators).
+- Build a web app to predict house prices from user inputs.
+- Perform time-series analysis of house prices over multiple years.  
 
 ---
 
 ## 📁 Repo Structure
 ```bash
-├── Business Challenge Data Cleaning and EDA.pdf   # PDF report with data cleaning steps and exploratory data analysis
-├── Vehicles Sales Business Questions.sql          # SQL script containing business questions and queries
-├── Vehicles Sales Data Analysis.ipynb             # Jupyter Notebook with detailed data analysis and visualizations
-└── sales_data_sample.csv                          # Dataset used for the analysis
+├── King County Real Estate Market Analysis Pres...   # Project presentation (PDF/PowerPoint)  
+├── King_countryproject.ipynb                        # Jupyter Notebook with analysis and modeling    
+└── king_country_houses_aa.csv                       # Dataset used in the analysis     
