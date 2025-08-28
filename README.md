@@ -37,34 +37,49 @@ The goal of this project is to **predict house prices** using property features,
 
 ## 🛠 Steps Taken
 
+## 🛠 Steps Taken
+
 1. **Data Cleaning**
-  - Standardized date format (`date` column).  
-  - Treated outliers in `bedrooms`, `bathrooms`, and `sqft_lot`.  
-  - Encoded categorical variables (e.g., `zipcode`).  
-  - Created new features (e.g., house age, renovated age).  
+  - Converted `date` column to datetime format
+  - Handled missing values, duplicates, and inconsistent data types
+  - Treated outliers in `bedrooms`, `bathrooms`, and `sqft_lot`
 
 2. **Exploratory Data Analysis (EDA)**
-  - Distribution analysis of price and features.  
-  - Correlation heatmap to identify key drivers of price.  
-  - Geographical visualization using latitude/longitude and zip codes.  
-  - Comparison of renovated vs. non-renovated houses.
-    
-2. **Modeling**
-  - Train-test split for predictive modeling.  
-  - Regression models applied:  
-    - **Linear Regression**  
-    - **Ridge & Lasso Regression**  
-    - **Random Forest Regressor**  
-  - Evaluation metrics: RMSE, MAE, R²
+  - Analyzed distributions of features and target (`price`)
+  - Checked correlations and multicollinearity
+  - Identified data quality issues for preprocessing
+
+3. **Feature Engineering & Preparation**
+  - Defined target (`y = price`) and predictors (`X`)
+  - No categorical encoding was required
+  - Prepared datasets for model training/testing
+
+4. **Modeling**
+  - Performed train-test split
+  - Applied multiple models:
+    - Linear Regression
+    - AdaBoost
+    - XGBoost
+    - Random Forest
+    - Gradient Boosting
+    - CatBoost
+  - Compared results across models
+
+5. **Model Evaluation & Improvement**
+  - Metrics: RMSE, MAE, R²
+  - Linear Regression performed the weakest
+  - XGBoost, Random Forest, and CatBoost gave the best results
+  - CatBoost achieved the highest overall accuracy
+  - Improvements included cleaning, handling multicollinearity, and testing additional algorithms
 
 ---
 
 ## 📌 Main Findings
-- **Living Space (sqft_living)** and **grade** are the strongest predictors of price.  
-- Houses with **waterfront** views have significantly higher prices.  
-- Renovated properties tend to sell at a premium compared to non-renovated ones.  
-- Location (zipcode, latitude, longitude) plays a major role in price variability.  
-- Tree-based models (Random Forest) performed better than linear models. 
+- The location of the property (lat) is one of the strongest drivers of house prices.
+- Size and quality (sqft_living, grade) are key features influencing value.
+- Number of bedrooms and floors have little impact compared to other variables.
+- Boosting models (XGBoost, CatBoost) consistently outperform simple linear regression.
+- CatBoost provided the most accurate predictions, with the best R² and MSE scores.
 
 ---
 
